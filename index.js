@@ -2,7 +2,7 @@ exports.printMsg = function() {
   console.log("This is a message from the demo package #3");
 }
 
-exports.Pass = function Pass({twgl, frag, size = 8, texture }) {
+exports.Pass = function Pass({gl, twgl, frag, size = 8, texture }) {
     if (size.length)
       this.resolution = size
     else
